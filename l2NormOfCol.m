@@ -6,5 +6,7 @@ function [normList] = l2NormOfCol(M)
 
 normList = diag(sqrt(M'*M));
 
+% Transpose to make it a row vector
+normList = normList.';
 
 end
